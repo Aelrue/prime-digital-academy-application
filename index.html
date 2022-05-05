@@ -4,18 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Alexis Mike Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Alexis Mike</h1>
+  
+  <div class="head">
+    <h1>Alexis Mike</h1> 
+  </div>
+  
   <h3>Fast learning team player with an eye for details</h3>
-  <p>3782 Haines Road 
-    </br>Duluth, MN 55811 </br>
-  612-715-8030</br> 
-littlehoatzin@gmail.com</p>
+ 
+<img src="https://lh3.googleusercontent.com/yhSfv-iE-rvHMLd5H1QP3RtEkrOlET4UM7SUd7Wd1wjTcf2fotKS-cUP-nc6vn00q1trpbL4_QmO3iRPFvm1ZcPmhm93XqiPeJI3Xv4C8MUV6VR-dd-_lGkHU68gyToRAnyRclya21o=w2400" 
+     alt="Alexis" 
+     width="200"
+     />
+  
+  </br>
 
+<a href="https://www.linkedin.com/in/alexis-mike-30a978123/" target="_blank" class="linkedin"
+      >LinkedIn Profile</a
+    >  
+  
+<div class="head">
 <h2>Professional Experience</h2>
+</div>
+
 <hr/>
+
 <h3>Primal Pet Foods</h3>
 <h4>Consumer Service Representative </br> March 2021 - February 2022</h4>
 <ul>
@@ -107,16 +124,46 @@ administering fluids, and trimming nails</li>
   <li>Schedule and host birthday parties with activities for young children</li>
   <li>Guided tours of the night sky and solar system</li>
   <li>Updating website through Dreamweaver software</li>
-  <li>Plan monthly events, organize schedules, and create lesson plans</li>
+  <li>Plan monthly events, organize schedules, and create lesson plans</li> 
+</ul>
 
+<div class="head">
 <h2>Education</h2> 
+</div>
+
 <hr/>
+
 <h3>University of Minnesota - Duluth</h3>
 <h4>B.A. Art, Minor in Film Studies </br> August 2012 - December 2016</h4>
+
 <h3>Mahtomedi High School</h3>
 <h4>September 2008 - June 2012</h4>
 
 <h3>SheCodes Basics</h3>
 <h4>March 2022 - April 2022</h4>
+
+<button>Get in Touch</button>
+
+    <script>
+      function contactMe() {
+        let question = prompt(
+          "Hi there. Do you work for Prime Digital Academy?"
+        );
+        question = question.toLowerCase();
+        if (question === "yes") {
+          alert(
+            "Excellent! Alexis can be contacted via email at: littlehoatzin@gmail.com"
+          );
+        } else {
+          alert(
+            "Thank you for your interest, but Alexis is not currently looking for employment."
+          );
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+
+      contactButton.addEventListener("click", contactMe);
+    </script>
   </body>
 </html>
